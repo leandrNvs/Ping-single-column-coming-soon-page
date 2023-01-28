@@ -25,11 +25,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./desktop.png)
+![](./mobile.png)
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [live](https://leandrnvs.github.io/Ping-single-column-coming-soon-page/)
 
 ## Author
 

@@ -111,6 +111,7 @@ h2 + p {
   width: 25px;
   border-radius: 50%;
   border: thin solid var(--Blue);
+  color: var(--Blue);
   display: flex;
   align-items: center;
   justify-content: center;
