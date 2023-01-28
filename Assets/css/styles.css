@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+:root {
+  --Blue: hsl(223, 87%, 63%);
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+.main {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.main > img {
+  margin-bottom: 4rem;
+}
+
+.logo {
+  width: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-weight: 300;
+  color: var(--Gray);
+}
+
+h2 span {
+  font-weight: 700;
+  color: var(--Very-Dark-Blue);
+}
+
+h2 + p {
+  font-size: 0.9rem;
+  margin-top: 0.7rem;
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.form input,
+.form button {
+  border: 1px solid var(--Pale-Blue);
+  border-radius: 2rem;
+  padding: 0.8rem 2rem;
+}
+
+.form input::placeholder {
+  color: var(--Pale-Blue);
+}
+
+.form button {
+  background-color: var(--Blue);
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form button:hover {
+  opacity: 0.8;
+}
+
+.form input.error {
+  border-color: var(--Light-Red);
+}
+
+.helper-text {
+  text-align: center;
+  font-size: 0.813rem;
+  color: var(--Light-Red);
+  display: none;
+}
+
+.helper-text.error {
+  display: block;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer a {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: thin solid var(--Blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer a:hover {
+  background-color: var(--Blue);
+  color: #fff;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.footer p {
+  font-size: 0.713rem;
+  color: var(--Gray);
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 700px) {
+  .main {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form input {
+    flex-basis: 65%;
+  }
+
+  .form button {
+    flex: 1;
+  }
+
+  .helper-text {
+    order: 1;
+    padding-left: 2rem;
+    margin-bottom: 0;
+  }
+
+  .main > img {
+    margin-bottom: 1.2rem;
+  }
+}
